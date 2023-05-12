@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Run this file to see my visualization -->
+<html>
+<head>
+  <title> Tornado Path Distribution Visualization </title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+  #title { <!-- Arbitray setting, feel free to change them for visibility-->
+      font-size: 35px;
+      font-weight: bold;
+	  text-align: center;
+      margin-top: 11px;
+    }
+    #map {
+      
+      width: 67%;
+	  height: 750px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="title"> Tornado Path Distribution:2018-2022 </h1> <!-- Displays my title -->
+  <div id="map"> </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"> </script> <!-- For parsing csv files (hosted on my GitHub page) directly in JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"> </script>
+  <script src="tornado_functions.js"> </script> <!-- links to my JavaScript function (adds interactivity + tornado paths to the map) -->
+</body>
+</html>
